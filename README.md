@@ -1,2 +1,2 @@
-# personal-website
-Personal Webite
+# Charlie Sometimes
+Artist's Website
