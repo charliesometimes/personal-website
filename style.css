@@ -1,3 +1,56 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
 	padding: 0px;
 	margin: 0px;
@@ -11,17 +64,18 @@ svg {
 
 div#page-canvas {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
+	width: 101vw;
+	height: 101vh;
 	background-image: linear-gradient( 109.6deg,  rgba(44,83,131,1) 18.9%, rgba(95,175,201,1) 91.1% );
 }
 
 div#page-canvas div#moon {
 	position: absolute;
 	left: 10vw;
-	width:25vw;
-	max-width: 10vh;
+	width:18vw;
+	max-width: 11vh;
 	top: 10vh;
+	z-index: 1;
 }
 
 div#page-canvas div#diamond {
@@ -30,4 +84,73 @@ div#page-canvas div#diamond {
 	width:100vw;
 	height: 95vh;
 	top: 5vh;
+	z-index: 5;
+}
+
+div#page-canvas div#constellation-1 {
+	position: absolute;
+	left: 64vw;
+	width:100vw;
+	max-width: 185vh;
+	top: 6vh;
+	z-index: 1;
+}
+
+div#page-canvas div#constellation-2 {
+	position: absolute;
+	left: 20vw;
+	width:151vw;
+	max-width: 275vh;
+	top: 70vh;
+	z-index: 1;
+}
+
+div#page-canvas div#constellation-3 {
+	position: absolute;
+	left: 74vw;
+	width:151vw;
+	max-width: 275vh;
+	top: 73vh;
+	z-index: 1;
+}
+
+div#page-canvas div#constellation-4 {
+	position: absolute;
+	left: 83vw;
+	width:151vw;
+	max-width: 275vh;
+	top: 24vh;
+	z-index: 1;
+}
+
+div#page-canvas div#star-1 {
+	position: absolute;
+	left: 25vw;
+	width:151vw;
+	max-width: 275vh;
+	top: 26vh;
+	z-index: 1;
+}
+
+div#page-canvas div#star-2 {
+	position: absolute;
+	left: 7vw;
+	width:151vw;
+	max-width: 275vh;
+	top: 60vh;
+	z-index: 1;
+}
+
+div#page-canvas div#copyright {
+	position: absolute;
+	left: 1vw;
+	width:151vw;
+	max-width: 275vh;
+	bottom: 1vh;
+	z-index: 0;
+}
+
+div#page-canvas div#copyright {
+	font-size: 2vh;
+	color: #f2dcbb;
 }
