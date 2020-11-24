@@ -62,6 +62,16 @@ svg {
 	height: 100%;
 }
 
+h1 {
+	font-size: 5vh;
+	padding-bottom: 2vh;
+}
+
+p {
+	font-size: 2vh;
+	padding-bottom: 1vh;
+}
+
 div#page-canvas {
 	position: relative;
 	width: 101vw;
@@ -153,4 +163,30 @@ div#page-canvas div#copyright {
 div#page-canvas div#copyright {
 	font-size: 2vh;
 	color: #f2dcbb;
+}
+
+
+.modal {
+	z-index: 10;
+	position: absolute;
+	left: 0vw;
+	top: 0vh;
+	width: 81vw;
+	max-height: 90vh;
+	overflow-y: scroll;
+}
+
+.modal {
+	color: #00332c;
+	padding: 5vw;
+	margin: 5vw;
+	background-color: #ff6e6c66;
+}
+
+div#page-canvas div#about-me {
+	top: -100vh;
+}
+
+div#page-canvas div#contact {
+	top: -100vh;
 }
